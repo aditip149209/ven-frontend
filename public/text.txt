@@ -1,0 +1,102 @@
+name- Art by Vishwanath
+navbar sections- portfolio, about, enquire
+
+first section:
+	heading: Art in every shade and story
+	para text: From bold charcoal sketches to vibrant acrylics, every piece is crafted with heart. Commission your own portrait, join our online art classes, or browse a gallery of expressive works. Wherever you are in India, let’s create something unforgettable together.
+
+	two buttons- commision, portfolio 
+
+
+Second section: 
+	heading: Art that moves, inspires, connects
+	para text: Step into a world where every stroke tells your story. From soulful charcoal portraits to vibrant acrylics, each piece is crafted with care and passion. Whether you’re looking for a custom commission or eager to learn new techniques, you’re always welcome here. Let’s create something unforgettable together.
+	first card heading: charcoal and graphite brilliance
+	first card text: Bring your memories to life with expressive sketches and detailed portraits. These classic mediums capture emotion and personality, making every piece a heartfelt keepsake or a truly special gift.
+	second card heading: acrylic and color pencils wonders
+	second card text: Add energy and color to your space with bold acrylics and delicate pencil work. From lively scenes to imaginative abstracts, each artwork is designed to spark joy and inspiration.
+	third card heading: interactive online art classes
+	third card text: Join my class and learn at your own pace. Explore everything from beginner basics to advanced speed drawing, and discover the joy of creating art together.
+
+THird Section: 
+
+	No heading
+	4 cards
+	first card heading: speed drawing, art in minutes
+	first card text: Feel the rush as portraits and scenes take shape before your eyes—each piece is a burst of creativity, perfect for anyone who loves art with energy and flair.
+
+	second card heading : charcoal and graphite, pure expression
+	second card text: Step into a world of striking contrasts and delicate details. Every drawing is crafted with care, bringing emotion and timeless beauty to your space.
+
+	third card heainf: color pencil, vibrant storytelling
+	third card text; Watch your ideas bloom in vivid color. From lifelike portraits to playful scenes, each artwork is full of warmth, personality, and imagination.
+
+	fourth card heading : art classes, creativity for everyone
+	fourth card text: Join  and explore new techniques together. Whether you’re just starting or looking to grow,  teractive classes make learning art fun and accessible.
+	justify align
+
+
+Fourth section: 
+	heading: Gallery of Inspired Creations
+	text: Step into a world where every sketch, brushstroke, and splash of color tells a story. From bold charcoal portraits to vibrant acrylics and delicate coffee art, this gallery is a celebration of creativity in every medium. Whether you’re seeking inspiration, looking to commission a unique piece, or curious about our online art classes, you’re invited to explore, connect, and imagine what’s possible. Let’s make art together—one masterpiece at a time.
+	center aligned.
+	8 image cards 
+	add button with link to portfolio
+
+Fifth section:
+	two divs in flex flex-wrap for above md, flex col for mobile
+	first dive: 
+	heading: bring your vision to life
+	text: Ready for a custom portrait, a bold charcoal sketch, or to join a vibrant art class? Let’s create something unforgettable together—your story, your style, your art
+	button: start now- link to contact page to contact the teacher
+
+	second dive: 
+	three sections
+	s1: Order a one-of-a-kind artwork in charcoal, graphite, acrylic, or your favorite medium—crafted just for you.
+	s2: Join my live online art classes from anywhere in the world.
+	s3: Browse speed drawings and inspiring projects—each piece made with heart and skill.
+
+sixth section: 
+	two divs- with flex flex-col for all screens. 
+	first div: 
+	headng: Real stories. Lasting impressions.
+	text: Discover how custom art and online classes have inspired clients across India. Here’s what our creative community has to say.
+
+	second div: carousel review section 
+
+seventh section: 
+	small heading: your questions, answered
+	heading: art commisions and classes made easy 
+	text below: Wondering how to commission a piece or join an art class? Find all the details you need to start your creative journey, from custom artwork to online lessons—no experience needed.
+	faq1: How do I request a custom piece?
+
+Just share your idea, favorite medium, and any inspiration you have. We’ll talk through your vision, confirm the details, and keep you updated as your artwork takes shape.
+	
+	faq2: Which mediums can I choose from?
+
+Charcoal and graphite are my specialties, but I also work with acrylic, color pencil, coffee, and chalk. Each brings a unique touch to your custom art.
+	
+	faq3: Are online art classes available?
+
+Yes! Classes are open to everyone, no matter your skill level or location in the world. Join live sessions, learn new techniques, and get plenty of encouragement along the way.
+
+	faq4: What’s the timeline for commissions?
+
+Most artworks are finished in 1-3 weeks, depending on size and medium. Need something fast? Speed drawings and smaller pieces can be ready even sooner—just let me know!
+	
+	faq5: Can I book private or group lessons?
+
+Absolutely! Choose from private sessions or group workshops. Whether you’re just starting out or want to sharpen your skills, there’s a class for you.
+	
+	faq6: Where can I view your artwork?
+
+Check out the portfolio for a range of finished pieces in different styles and mediums. You’ll also find time-lapse videos and reels on my YouTube and Instagram.
+	
+eight section: reaching out section. just a button to enquire page. 
+
+footer: copyright 2025 Art By Vishwanath
+links to instagram, youtube, enquire
+
+
+	
+

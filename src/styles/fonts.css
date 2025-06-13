@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Ela Sans Regular;
+    src: url('../assets/fonts/Ela\ Sans\ Light\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ela Sans SemiBold;
+    src: url('../assets/fonts/Ela\ Sans\ SemiLight\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+

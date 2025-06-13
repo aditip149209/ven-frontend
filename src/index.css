@@ -1,3 +1,44 @@
+/* index.css */
+@font-face {
+    font-family: 'Ela Sans Regular';
+    src: url('/src/assets/fonts/Ela Sans Light Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ela Sans SemiBold';
+    src: url('/src/assets/fonts/Ela Sans SemiLight Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@theme {
+    --font-elareg: 'Ela Sans Regular', sans-serif;
+    --font-elasemi: 'Ela Sans SemiBold', sans-serif;
+    --color-brownlight : #1c1b1a;
+    --color-brownfore : #151414;
+    --color-textmain : #f8f1e7;
+    --color-textdark : #dcc299;
+    --color-cardlight: #312d29;
+    --color-coffee: #6F4E37
+}
+
 @import "tailwindcss";
+
+.font-elareg { 
+    font-family: var(--font-elareg); 
+}
+.font-elasemi { 
+    font-family: var(--font-elasemi); 
+}
+
+
+
+  
+
+
+
+
 
 

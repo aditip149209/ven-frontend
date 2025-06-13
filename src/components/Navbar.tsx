@@ -6,7 +6,7 @@ const navLinks = [
   { name: "WORK", href: "#work" },
   { name: "ABOUT", href: "#about" },
   { name: "CLASSES", href: "#classes" },
-  { name: "TOOLBOX", href: "#toolbox" },
+  
 ];
 
 export default function Navbar() {
@@ -15,10 +15,10 @@ export default function Navbar() {
 
 
   return (
-    <nav className="w-full bg-slate-600 text-white px-20 flex items-center justify-between min-h-[10vh] relative">
+    <nav className="w-full bg-brownlight text-textmain px-20 flex items-center justify-between min-h-[10vh] relative">
       {/* Logo/Brand */}
       <div className="flex items-center gap-2 ">
-        <p className="text-2xl font-semibold font-['Edu_SA_Hand']">My Art</p>
+        <p className="text-4xl font-semibold font-elasemi">My Art</p>
       </div>
       {/* Nav Links */}
       <ul className="hidden md:flex space-x-10">
@@ -27,10 +27,10 @@ export default function Navbar() {
             <a
               href={link.href}
               onClick={() => setActive(idx)}
-              className={`text-white text-lg font-semibold font-['Quicksand'] uppercase tracking-wider ${
+              className={`text-textmain font-elareg uppercase tracking-wider ${
                 active === idx
-                  ? "text-sm px-4 py-2 leading-none rounded-full underline underline-offset-8 decoration-2 hover:bg-gray-700"
-                  : "text-sm px-4 py-3 leading-none rounded-full hover:bg-gray-700 hover:underline underline-offset-8 hover:decoration-2"
+                  ? "text-2xl px-4 py-2 leading-none rounded-full underline underline-offset-8 decoration-2 hover:bg-cardlight"
+                  : "text-2xl px-4 py-3 leading-none rounded-full hover:bg-cardlight hover:underline underline-offset-8 hover:decoration-2"
               }`}
             >
               {link.name}
@@ -41,7 +41,7 @@ export default function Navbar() {
 
       {/* Hamburger Icon */}
       <button
-        className="block md:hidden text-white text-3xl"
+        className="block md:hidden text-textmain text-3xl"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >
@@ -49,7 +49,7 @@ export default function Navbar() {
       </button>
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-slate-600 flex flex-col items-center md:hidden shadow-lg">
+        <div className="absolute top-full left-0 w-full bg-brownlight flex flex-col items-center md:hidden shadow-lg">
           {navLinks.map((link, idx) => (
             <a
               key={link.name}
@@ -58,7 +58,7 @@ export default function Navbar() {
                 setActive(idx);
                 setMenuOpen(false);
               }}
-              className={`py-4 w-full text-center text-white font-bold uppercase tracking-wider border-b border-white ${
+              className={`py-4 w-full text-center text-textmain font-bold uppercase tracking-wider border-b border-white ${
                 active === idx
                   ? "underline underline-offset-8 decoration-2"
                   : "hover:underline"
