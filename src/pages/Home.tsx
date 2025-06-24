@@ -8,13 +8,13 @@ import HomeSection4 from '../components/HomeSection4'
 import HomeSection5 from '../components/HomeSection5'
 import TestimonialSections from '../components/TestimonialSections'
 
+import { Link } from 'react-router-dom'
 
 import { Router } from 'react-router-dom'
 
-
 function Home() {
   return (
-    <div className='max-h-screen flex flex-col'>
+    <div className='max-h-screen flex flex-col overflow-y-scroll hide-scrollbar md:custom-scroll'>
         <Navbar />
         <HomeSection1 />
         <HomeSection2 />

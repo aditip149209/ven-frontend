@@ -2,32 +2,50 @@ import React from 'react'
 
 function HomeSection1() {
   return (
-    <section className="bg-brownfore w-full">
-      <div className="mx-auto flex flex-col md:flex-row items-center min-h-[80vh]">
-        {/* Left: Image */}
-        <div className="w-full md:w-1/2">
-          <img 
-            src="/section1.jpg" 
-            alt="Section Visual" 
-            className="w-full h-64 md:h-auto p-10 rounded-[50px] object-cover"
-          />
-        </div>
-        {/* Right: Text */}
-        <div className="w-full p-10 md:w-1/2 flex flex-col items-start md:pl-12 mt-8 md:mt-0">
-          <h1 className="text-4xl md:text-5xl font-bold text-textdark mb-6 font-elasemi">
-            Hi! I'm Lauren Hom.
-          </h1>
-          <p className="text-xl md:text-3xl text-textmain mb-8 font-elareg">
-            I'm a <span className="font-bold">designer & lettering artist</span> with a knack for marketing who loves helping creatives and brands get more eyes on their work.
-          </p>
-          <button
-            className="bg-cardlight text-white px-8 py-4 rounded shadow font-elareg text-2xl hover:bg-coffee transition "
-          >
-            TELL ME MORE!
+    <section className="w-full min-h-[90vh] flex items-center justify-center bg-brownfore font-elasemi">
+    <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12 px-6 py-24 mx-auto">
+      {/* Left: Text Content */}
+      <div className="md:w-1/2 flex flex-col items-start">
+        <h1 className="text-textmain text-4xl md:text-5xl font-elareg mb-6 leading-tight tracking-wide">
+          ART IN EVERY<br />SHADE AND STORY
+        </h1>
+        <p className="text-textmain text-base md:text-2xl mb-10 max-w-lg">
+          From bold charcoal sketches to vibrant acrylics, every piece is crafted with heart. Commission your own portrait, join our online art classes, or browse a gallery of expressive works. Wherever you are in India, let’s create something unforgettable together.
+        </p>
+        <div className="flex gap-4">
+          <button className="px-6 py-2 rounded-md bg-textdark text-brownfore text-xl font-medium shadow transition hover:bg-coffee">
+            Commission
+          </button>
+          <button className="px-6 py-2 rounded-md bg-coffee text-textmain text-xl font-medium shadow transition hover:bg-cardlight">
+            Portfolio
           </button>
         </div>
       </div>
-    </section>
+
+      {/* Right: Image Grid */}
+      <div className="md:w-1/2 flex flex-col gap-4">
+        <div className="flex gap-4">
+          <img
+            src="coffee1.jpg"
+            alt="Art process"
+            className="w-1/2 aspect-[1/1] object-cover rounded-xl"
+          />
+          <img
+            src="pencils.jpg"
+            alt="Colored pencils"
+            className="w-1/2 aspect-[1/1.2] object-cover rounded-xl"
+          />
+        </div>
+        <div className="flex gap-4">
+          <img
+            src="paintbrush.jpg"
+            alt="Abstract art"
+            className="w-full aspect-[2/1.2] object-cover rounded-xl"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
   )
 }
 
