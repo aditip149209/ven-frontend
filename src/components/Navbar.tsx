@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="w-full bg-brownlight text-textmain px-4 md:px-20 flex items-center justify-between min-h-[10vh] max-h-[10vh] relative">
       {/* Logo/Brand */}
       <div className="flex items-center gap-2 ">
-        <p className="text-4xl font-semibold font-elasemi">My Art</p>
+        <p className="text-4xl font-semibold font-elasemi">Art by Vishwanath</p>
       </div>
       {/* Nav Links */}
       <ul className="hidden md:flex space-x-10">
