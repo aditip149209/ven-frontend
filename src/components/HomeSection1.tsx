@@ -1,6 +1,10 @@
-import React from 'react'
+import { useState, useEffect, useRef } from 'react';
+
 
 function HomeSection1() {
+
+  
+ 
   return (
     <section className="w-full min-h-[90vh] flex items-center justify-center bg-brownfore font-elasemi">
     <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12 px-6 py-24 mx-auto">
@@ -10,7 +14,7 @@ function HomeSection1() {
           ART IN EVERY<br />SHADE AND STORY
         </h1>
         <p className="text-textmain text-base md:text-2xl mb-10 max-w-lg">
-          From bold charcoal sketches to vibrant acrylics, every piece is crafted with heart. Commission your own portrait, join our online art classes, or browse a gallery of expressive works. Wherever you are in India, let’s create something unforgettable together.
+          
         </p>
         <div className="flex gap-4">
           <button className="px-6 py-2 rounded-md bg-textdark text-brownfore text-xl font-medium shadow transition hover:bg-coffee">

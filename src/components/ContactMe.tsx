@@ -2,15 +2,17 @@ import  { useState } from 'react'
 import type { ChangeEvent, FormEvent } from 'react'
 import PhoneInput from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
+import axios from 'axios'
 
 function ContactMe() {
     const [form, setForm] = useState({
         name: "",
-  
         message: "",
-        phone: ""
+        phone: "",
+        emailid:  ""
     });
     const [submitted, setSubmitted] = useState(false);
+    const phoneNum: number = 919900346107
     
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -22,9 +24,34 @@ function ContactMe() {
     
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // Here, you would typically send the form data to your backend or an email service
-        // For now, just show a confirmation
+        const sendForm = async () => {
+          try{
+            const response = await axios.post('http://localhost:1337/api/formsubmissions', {data:{
+              name: form.name,
+              message: form.message,
+              phonenum: form.phone,
+              emailid: form.emailid
+          }})
+          console.log(response)
+
+          const text = `Hello, my name is ${form.name}. ${form.message}`;
+          const encodedText = encodeURIComponent(text);
+          
+          const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+          
+          const whatsappUrl = isMobile
+            ? `https://wa.me/${phoneNum}?text=${encodedText}` 
+            : `https://web.whatsapp.com/send?phone=${phoneNum}&text=${encodedText}`; 
+          
+          window.open(whatsappUrl, "_blank");
+          
+          }
+          catch(error: any){
+            console.log("Error submitting form",error);
+          }
+        }
         setSubmitted(true);
+        sendForm();
     };
 
     return (
@@ -50,6 +77,20 @@ function ContactMe() {
                 type="text"
                 required
                 value={form.name}
+                onChange={handleChange}
+                className="w-full px-4 py-2 rounded-lg border border-textmain bg-transparent text-textmain focus:outline-none focus:ring-2 focus:ring-textdark"
+              />
+            </div>
+            <div>
+              <label htmlFor="emailid" className="block text-textmain mb-2">
+                Email ID
+              </label>
+              <input
+                id="emailid"
+                name="emailid"
+                type="email"
+                required
+                value={form.emailid}
                 onChange={handleChange}
                 className="w-full px-4 py-2 rounded-lg border border-textmain bg-transparent text-textmain focus:outline-none focus:ring-2 focus:ring-textdark"
               />

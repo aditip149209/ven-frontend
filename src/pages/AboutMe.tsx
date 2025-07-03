@@ -11,7 +11,7 @@ function AboutMe() {
     <div>
         <section className="w-full min-h-[70vh] flex items-center justify-center bg-cardlight font-elareg">
       <div className="max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-12 px-6 py-20 mx-auto">
-        {/* Left: About Info */}
+
         <div className="md:w-2/3 flex flex-col items-start">
           <h2 className="text-textmain text-3xl md:text-5xl font-elasemi mb-6">
             About Me
@@ -34,12 +34,11 @@ function AboutMe() {
             </button>
           </div>
         </div>
-        {/* Right: Teacher Photo */}
         <div className="md:w-1/3 flex justify-center">
           <img
-            src="[TEACHER_PHOTO_PLACEHOLDER]"
+            src="person1.jpg"
             alt="Teacher portrait"
-            className="w-64 h-64 object-cover rounded-2xl shadow-lg"
+            className="w-64 h-64 object-cover rounded-lg shadow-lg"
           />
         </div>
       </div>

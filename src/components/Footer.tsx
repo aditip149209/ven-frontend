@@ -12,7 +12,7 @@ function Footer() {
           </a>
       </div>
       <p className="text-brownfore text-sm text-center border-t border-coffee pt-4 w-full max-w-2xl">
-        Copyright © 2025
+        Art by Vishwanath 
       </p>
     </footer>
   )

@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom'
 
 import { Router } from 'react-router-dom'
 
+
 function Home() {
   return (
     <div className='max-h-screen flex flex-col overflow-y-scroll hide-scrollbar md:custom-scroll'>
@@ -19,9 +20,7 @@ function Home() {
         <HomeSection1 />
         <HomeSection2 />
         <HomeSection3 />
-        <HomeSection4 />
         <HomeSection5 />
-        <TestimonialSections />
         <Footer />
     </div>
   )
