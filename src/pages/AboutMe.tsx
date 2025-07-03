@@ -9,7 +9,7 @@ function AboutMe() {
     <>
     <Navbar />
     <div>
-        <section className="w-full min-h-[70vh] flex items-center justify-center bg-cardlight font-elareg">
+        <section className="w-full min-h-[100vh] flex items-center justify-center bg-cardlight font-elareg">
       <div className="max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-12 px-6 py-20 mx-auto">
 
         <div className="md:w-2/3 flex flex-col items-start">

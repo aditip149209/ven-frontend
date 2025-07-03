@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Masonry, {ResponsiveMasonry} from 'react-responsive-masonry'
 import { usePortfolioPageStore } from '../../store/portfolioPageStore';
 import CardSkeleton from './CardSkeleton';
+import { Link } from 'react-router-dom';
 
 function HomeSection2() {
     const {data, isLoading, fetchPortfolioPageData} = usePortfolioPageStore();
@@ -51,13 +52,12 @@ function HomeSection2() {
             </ResponsiveMasonry>
         </div>
         <div className="flex justify-center p-8">
-            <a 
-                href="/portfolio" 
-                rel="noopener noreferrer"
-                className="bg-cardlight text-textmain px-8 py-4 mb-10 rounded shadow font-semibold text-lg hover:bg-coffee hover:textmain transition"
+            <Link 
+                to="/portfolio"
+                className="bg-textmain text-brownfore px-8 py-4 mb-10 rounded-lg duration-400 ease-in-out shadow font-semibold text-lg hover:bg-coffee hover:text-textmain transition"
             >
                 View My Portfolio
-            </a>
+            </Link>
         </div>
     </div>
   )

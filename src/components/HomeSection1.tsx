@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 
 function HomeSection1() {
@@ -17,11 +18,11 @@ function HomeSection1() {
           
         </p>
         <div className="flex gap-4">
-          <button className="px-6 py-2 rounded-md bg-textdark text-brownfore text-xl font-medium shadow transition hover:bg-coffee">
-            Commission
+          <button className="px-6 py-2 rounded-md bg-textdark duration-400 ease-in-out text-brownfore text-xl font-medium shadow transition hover:bg-coffee hover:text-textmain">
+            <Link to="/contactme">Commission</Link>
           </button>
-          <button className="px-6 py-2 rounded-md bg-coffee text-textmain text-xl font-medium shadow transition hover:bg-cardlight">
-            Portfolio
+          <button className="px-6 py-2 rounded-md bg-coffee duration-400 ease-in-out text-textmain text-xl font-medium shadow transition hover:bg-cardlight">
+            <Link to="/portfolio">Portfolio</Link>
           </button>
         </div>
       </div>

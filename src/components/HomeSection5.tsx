@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function HomeSection5() {
   return (
@@ -13,8 +14,8 @@ function HomeSection5() {
           <p className="text-textmain text-base md:text-2xl mb-8">
             Ready for a custom portrait, a bold charcoal sketch, or to join a vibrant art class? Let’s create something unforgettable together—your story, your style, your art.
           </p>
-          <button className="px-6 py-3 text-xl rounded-md bg-textmain text-browndark font-bold transition hover:bg-coffee hover:text-textmain">
-            Start now
+          <button className="px-6 py-3 text-xl rounded-lg bg-textmain duration-400 ease-in-out text-browndark font-bold transition hover:bg-coffee hover:text-textmain">
+            <Link to="/contactme">Start now</Link>  
           </button>
         </div>
 
