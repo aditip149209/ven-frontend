@@ -28,8 +28,8 @@ export const useClassPageStore = create<ClassPageStore>((set) => ({
   fetchClassPage: async () => {
     set({ isLoading: true, error: null })
     try {
-      const response1 = await axios.get('http://localhost:1337/api/class-page?populate=*')
-      const response2 = await axios.get('http://localhost:1337/api/class-page?populate[classPage][on][landing-page-components.card-info][populate]=*')
+      const response1 = await axios.get('https://strapi-ven-backend.onrender.com/api/class-page?populate=*')
+      const response2 = await axios.get('https://strapi-ven-backend.onrender.com/api/class-page?populate[classPage][on][landing-page-components.card-info][populate]=*')
 
       const block1 = response1.data.data.classPage
       const block2 = response2.data.data.classPage[0].card

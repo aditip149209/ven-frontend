@@ -3,8 +3,6 @@ import Masonry, {ResponsiveMasonry} from 'react-responsive-masonry'
 import { usePortfolioPageStore } from '../../store/portfolioPageStore';
 import CardSkeleton from './CardSkeleton';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './Footer';
 
 function HomeSection2() {
     const {data, isLoading, fetchPortfolioPageData} = usePortfolioPageStore();

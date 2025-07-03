@@ -25,7 +25,7 @@ export const usePortfolioPageStore = create<ClassPageData>((set) => ({
     fetchPortfolioPageData: async () => {
         set({isLoading: true, error: null});
         try{
-            const res1 = await axios.get('http://localhost:1337/api/portfoliopage?populate[picturelist][on][landing-page-components.picturelist][populate]=picture.imageurl')
+            const res1 = await axios.get('https://strapi-ven-backend.onrender.com/api/portfoliopage?populate[picturelist][on][landing-page-components.picturelist][populate]=picture.imageurl')
 
             const block1 = res1.data.data.picturelist[0].picture
             // console.log(block1[1].imageurl[0].url);
@@ -35,7 +35,7 @@ export const usePortfolioPageStore = create<ClassPageData>((set) => ({
                 .filter((c: any) => Array.isArray(c.imageurl) && c.imageurl.length > 0 && c.imageurl[0]?.url)
                 .map((c: any) => ({
                 id: c.id,
-                imageUrl: "http://localhost:1337" + c.imageurl[0].url
+                imageUrl: "https://strapi-ven-backend.onrender.com" + c.imageurl[0].url
             }));
             console.log(pictures[1].imageUrl)
             console.log("yay")
