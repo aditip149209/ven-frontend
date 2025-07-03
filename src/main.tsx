@@ -8,3 +8,8 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>,
 )
+
+const loader = document.getElementById("loader");
+if (loader) {
+  loader.remove();
+}

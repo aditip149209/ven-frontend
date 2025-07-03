@@ -25,6 +25,9 @@
 }
 
 @import "tailwindcss";
+body{
+    background-color: #151414;
+}
 
 .font-elareg { 
     font-family: var(--font-elareg); 

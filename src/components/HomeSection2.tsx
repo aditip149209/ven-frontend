@@ -3,6 +3,8 @@ import Masonry, {ResponsiveMasonry} from 'react-responsive-masonry'
 import { usePortfolioPageStore } from '../../store/portfolioPageStore';
 import CardSkeleton from './CardSkeleton';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 function HomeSection2() {
     const {data, isLoading, fetchPortfolioPageData} = usePortfolioPageStore();
@@ -12,9 +14,7 @@ function HomeSection2() {
 
     if(isLoading){
         return(
-          <div className='bg-brownfore grid grid-cols-1 md:grid-cols-3 gap-6'>
-            <CardSkeleton />
-            <CardSkeleton />
+          <div className='bg-brownfore'>
             <CardSkeleton />
           </div>
         )

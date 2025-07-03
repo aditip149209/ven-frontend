@@ -11,18 +11,19 @@ function Portfolio() {
     fetchPortfolioPageData();
   }, [fetchPortfolioPageData])
 
-  if(!data || !data.pictures){
-    return(
-      <div className='bg-brownfore'>No pictures to display</div>
-    )
-  }
   if(isLoading){
     return(
-      <div className='bg-brownfore grid grid-cols-1 md:grid-cols-3 gap-6'>
+      <div className='bg-brownfore'>
+        <Navbar />
         <CardSkeleton />
-        <CardSkeleton />
-        <CardSkeleton />
+        <Footer />
       </div>
+    )
+  }
+
+  if(!data || !data.pictures){
+    return(
+      <div className='bg-brownfore'></div>
     )
   }
 
