@@ -10,20 +10,8 @@ function HomeSection2() {
         fetchPortfolioPageData()
     }, [fetchPortfolioPageData])
 
-    if(isLoading){
-        return(
-          <div className='bg-brownfore'>
-            <CardSkeleton />
-          </div>
-        )
-    }
-
-    if(!data || !data.pictures){
-        return(
-            <div className='bg-brownlight'>No pictures to display</div>
-        )
-    }
-    const picturesList = data?.pictures
+    const pictures: any = [];
+    
 
     return (
         <div className="bg-brownlight">
@@ -36,8 +24,10 @@ function HomeSection2() {
                 gutterBreakpoints={{350: "20px", 750: "16px", 900: "48px"}}
             >
                 <Masonry>
-                {picturesList.map(src => (
-                    <img src={src.imageUrl} 
+                {pictures.map((src: any, ind: any) => (
+                    <img 
+                         key={ind}
+                         src={src} 
                          style={{
                             width: "100%",
                             display: "block",

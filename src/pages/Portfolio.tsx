@@ -11,22 +11,8 @@ function Portfolio() {
     fetchPortfolioPageData();
   }, [fetchPortfolioPageData])
 
-  if(isLoading){
-    return(
-      <div className='bg-brownfore'>
-        <Navbar />
-        <CardSkeleton />
-        <Footer />
-      </div>
-    )
-  }
-
-  if(!data || !data.pictures){
-    return(
-      <div className='bg-brownfore'></div>
-    )
-  }
-
+  const pictures: any = []
+   
   return (
     <div className='bg-brownfore'>   
       <Navbar />
@@ -41,10 +27,10 @@ function Portfolio() {
                 gutterBreakpoints={{350: "20px", 750: "16px", 900: "48px"}}
             >
                 <Masonry>
-                {data.pictures.map(picture => (
+                {pictures.map((picture: any ,ind: any) => (
                     <img 
-                    key={picture.id}
-                    src={picture.imageUrl} 
+                    key={ind}
+                    src={picture} 
                          style={{
                             width: "100%",
                             display: "block",
