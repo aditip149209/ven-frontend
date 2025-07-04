@@ -11,7 +11,13 @@ function Portfolio() {
     fetchPortfolioPageData();
   }, [fetchPortfolioPageData])
 
-  const pictures: any = []
+  const pictures: any = ["Whats_App_Image_2025_06_30_at_9_26_26_PM_5dcefcab8d.jpeg", "Whats_App_Image_2025_06_30_at_9_26_26_PM_7083d513ad.jpeg"
+    ,"Whats_App_Image_2025_06_30_at_9_26_27_PM_060dfbc456.jpeg",
+    "Whats_App_Image_2025_06_30_at_9_26_28_PM_1_b734dbdf9b.jpeg",
+    "Whats_App_Image_2025_06_30_at_9_26_28_PM_1_c6aca308c8.jpeg",
+    "Whats_App_Image_2025_06_30_at_9_26_28_PM_2_f01c3a2690.jpeg",
+    "Whats_App_Image_2025_06_30_at_9_26_29_PM_2_271ee8f17c.jpeg"
+  ]
    
   return (
     <div className='bg-brownfore'>   
