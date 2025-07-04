@@ -9,12 +9,14 @@ function HomeSection2() {
     useEffect(() => {
         fetchPortfolioPageData()
     }, [fetchPortfolioPageData])
+    
+
 
     if(isLoading){
         return(
-          <div className='bg-brownfore'>
+        <div className='bg-brownfore'>
             <CardSkeleton />
-          </div>
+        </div>
         )
     }
 

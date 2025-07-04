@@ -10,14 +10,14 @@ function Portfolio() {
   useEffect(() => {
     fetchPortfolioPageData();
   }, [fetchPortfolioPageData])
-
+  
   if(isLoading){
     return(
       <div className='bg-brownfore'>
         <Navbar />
         <CardSkeleton />
         <Footer />
-      </div>
+      </div> 
     )
   }
 
@@ -27,7 +27,9 @@ function Portfolio() {
     )
   }
 
+  
   return (
+    
     <div className='bg-brownfore'>   
       <Navbar />
       <div className="bg-brownfore">
