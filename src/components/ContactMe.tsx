@@ -26,7 +26,7 @@ function ContactMe() {
         e.preventDefault();
         const sendForm = async () => {
           try{
-            const response = await axios.post('http://localhost:1337/api/formsubmissions', {data:{
+            const response = await axios.post('https://strapi-ven-backend.onrender.com/api/formsubmissions', {data:{
               name: form.name,
               message: form.message,
               phonenum: form.phone,
